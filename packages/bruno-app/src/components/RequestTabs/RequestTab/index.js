@@ -63,6 +63,14 @@ const RequestTab = ({ tab, collection }) => {
         color = theme.request.methods.head;
         break;
       }
+      case 'connect': {
+        color = theme.request.methods.connect;
+        break;
+      }
+      case 'trace': {
+        color = theme.request.methods.trace;
+        break;
+      }
     }
 
     return color;

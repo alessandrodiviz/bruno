@@ -34,6 +34,12 @@ const Wrapper = styled.div`
   .method-head {
     color: ${(props) => props.theme.request.methods.head};
   }
+  .method-connect {
+    color: ${(props) => props.theme.request.methods.connect};
+  }
+  .method-trace {
+    color: ${(props) => props.theme.request.methods.trace};
+  }
 `;
 
 export default Wrapper;

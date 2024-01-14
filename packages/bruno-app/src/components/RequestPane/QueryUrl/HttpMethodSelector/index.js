@@ -47,6 +47,8 @@ const HttpMethodSelector = ({ method, onMethodSelect }) => {
           <Verb verb="PATCH" />
           <Verb verb="OPTIONS" />
           <Verb verb="HEAD" />
+          <Verb verb="CONNECT" />
+          <Verb verb="TRACE" />
         </Dropdown>
       </div>
     </StyledWrapper>

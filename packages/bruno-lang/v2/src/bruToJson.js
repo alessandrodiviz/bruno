@@ -287,6 +287,14 @@ const sem = grammar.createSemantics().addAttribute('ast', {
       }
     };
   },
+  trace(_1, dictionary) {
+    return {
+      http: {
+        method: 'trace',
+        ...mapPairListToKeyValPair(dictionary.ast)
+      }
+    };
+  },
   query(_1, dictionary) {
     return {
       query: mapPairListToKeyValPairs(dictionary.ast)

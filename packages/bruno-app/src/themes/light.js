@@ -90,7 +90,9 @@ const lightTheme = {
       // customize these colors if needed
       patch: '#ca7811',
       options: '#ca7811',
-      head: '#ca7811'
+      head: '#ca7811',
+      connect: '#ca7811',
+      trace: '#ca7811'
     }
   },
 

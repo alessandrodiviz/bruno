@@ -25,6 +25,8 @@ const parseCurlCommand = (curlCommand) => {
   curlCommand = curlCommand.replace(/ -XPATCH/, ' -X PATCH');
   curlCommand = curlCommand.replace(/ -XDELETE/, ' -X DELETE');
   curlCommand = curlCommand.replace(/ -XOPTIONS/, ' -X OPTIONS');
+  curlCommand = curlCommand.replace(/ -XCONNECT/, ' -X CONNECT');
+  curlCommand = curlCommand.replace(/ -XTRACE/, ' -X TRACE');
   // Safari adds `-Xnull` if is unable to determine the request type, it can be ignored
   curlCommand = curlCommand.replace(/ -Xnull/, ' ');
   curlCommand = curlCommand.trim();
@@ -126,6 +128,10 @@ const parseCurlCommand = (curlCommand) => {
     method = 'delete';
   } else if (parsedArguments.X === 'OPTIONS') {
     method = 'options';
+  } else if (parsedArguments.X === 'CONNECT') {
+    method = 'connect';
+  } else if (parsedArguments.X === 'TRACE') {
+    method = 'trace';
   } else if (
     (parsedArguments.d ||
       parsedArguments.data ||

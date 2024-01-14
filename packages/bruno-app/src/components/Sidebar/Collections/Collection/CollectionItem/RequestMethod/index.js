@@ -16,7 +16,9 @@ const RequestMethod = ({ item }) => {
       'method-delete': method === 'delete',
       'method-patch': method === 'patch',
       'method-head': method === 'head',
-      'method-options': method == 'options'
+      'method-options': method == 'options',
+      'method-connect': method == 'connect',
+      'method-trace': method == 'trace'
     });
   };
 
